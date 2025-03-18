@@ -55,7 +55,13 @@ These graphs show that the drug in question is not effective in accomplishing it
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1<- xtabs(~infected+treatment, data=triUmp)
+rowPerc(table1)
+colPerc(table1)
+```
 
+These are numerical results which show that, of those infected with AIDS, 59 percent of them had taken the drug, and 40 percent of them had taken the placebo. This means that most of the people who retracted AIDS had taken the drug which was meant to prevent it. 
 
 ## Inferential Results
 
